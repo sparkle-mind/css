@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-/*  
-========== CSS INDEXING START HERE ========== 
-IMPORT FILES  
-VARIABLES
-GENERAL
-TYPOGRAPHY  
-========== CSS INDEXING End HERE ==========
-*/
+
 /* ==================================== IMPORT FILES ==================================== */
 /* poppins-regular - latin */
 @font-face {
@@ -58,41 +51,15 @@ TYPOGRAPHY
         /* Safari, Android, iOS */ url('../fonts/poppins-v19-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
 }
 
-/*Brandon Text*/
-@font-face {
-    font-family: 'Brandon Text';
-    src: url('../fonts/BrandonText-Regular.woff2') format('woff2'),
-        url('../fonts/BrandonText-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
-/* fira-sans-700 - latin */
-@font-face {
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/fira-sans-v15-latin-700.eot'); /* IE9 Compat Modes */
-    src: local(''), url('../fonts/fira-sans-v15-latin-700.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */ url('../fonts/fira-sans-v15-latin-700.woff2') format('woff2'),
-        /* Super Modern Browsers */ url('../fonts/fira-sans-v15-latin-700.woff') format('woff'),
-        /* Modern Browsers */ url('../fonts/fira-sans-v15-latin-700.ttf') format('truetype'),
-        /* Safari, Android, iOS */ url('../fonts/fira-sans-v15-latin-700.svg#FiraSans')
-            format('svg'); /* Legacy iOS */
-}
 
 /*==================================== VARIABLES ====================================*/
 :root {
     --first-font: 'poppins';
-    --second-font: 'Brandon Text';
-    --fira-sans: 'Fira Sans';
-    --bg-black: #222222;
-    --text-color-second: rgba(128, 128, 128, 1);
     --theme-color: #fc364c;
     --white: #ffffff;
     --black: #000000;
-    --bg-black: #222222;
+    
     --h1: normal 700 45px/100% var(--first-font);
     --h2: normal 700 35px/105.5% var(--first-font);
     --h3: normal 700 28px/112.5% var(--first-font);
@@ -211,7 +178,7 @@ html {
 }
 body {
     color: var(--black);
-    line-height: 24px;
+    line-height: 1.3;
     font-size: 16px;
     font-family: var(--first-font);
     font-weight: normal;
@@ -226,15 +193,9 @@ img {
 body::-webkit-scrollbar {
     display: none;
 }
-body.active-menu {
-    overflow: hidden;
-    touch-action: none;
-}
-img {
-    max-width: 100%;
-    display: block;
-}
+
 input[type='text'],
+input[type='search'],
 input[type='email'],
 input[type='password'],
 input[type='number'],
@@ -340,10 +301,7 @@ p {
 .offset-left {
     margin-left: calc((100% - 1720 px) / 2);
 }
-.overflow-hidden,
-.scrollno {
-    overflow: hidden;
-}
+
 .flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -354,12 +312,7 @@ p {
     flex-wrap: wrap;
     box-sizing: border-box;
 }
-.w-100 {
-    width: 100%;
-}
-.h-100 {
-    height: 100%;
-}
+
 .align-start {
     align-items: flex-start;
 }
@@ -434,10 +387,12 @@ button:hover,
     color: var(--theme-color);
     display: inline;
 }
-/*==================================== HEADER ====================================*/
+/*==================================== HEADER START====================================*/
 
+/*==================================== HEADER END====================================*/
 
-@media screen and (max-width: 1550px) {
+/*=========== RESPONSIVE START =============  */
+@media screen and (max-width: 1600px) {
   
 }
 @media screen and (max-width: 1440px) {
